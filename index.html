@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hair spare parts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- creating a internal css  -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght,GRAD@1,8..144,500,24&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght,GRAD@1,8..144,500,24&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght,GRAD@1,8..144,500,24&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #2e2e2e;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .container {
+            padding-top: 20px;
+            position: relative;
+            padding: 30px;
+        }
+
+        .container h1 {
+            font-size: 28px;
+            color: #4682b4;
+            text-transform: capitalize;
+            font-family: "MonMontserrat", sans-serif;
+            font-weight: 600;
+        }
+
+        .container ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            margin-left: 20px;
+        }
+
+        .container li {
+            text-align: center;
+            text-transform: capitalize;
+            font-family: "MonMontserrat", sans-serif;
+            margin-left: 12px;
+            font-size: 18px;
+            letter-spacing: 2px;
+            cursor: pointer;
+        }
+
+        .container ul li:hover {
+            color: red;
+            transition: 999ms;
+            margin-top: -23px;
+        }
+
+        .container form {
+            margin-left: -70px;
+        }
+
+        .container nav input {
+            border-radius: 20px;
+            border: none;
+            padding: 12px;
+            display: inline-block;
+        }
+
+        .container button {
+            font-size: 20px;
+            border-radius: 20px;
+            border: none;
+            margin-left: -29px;
+
+        }
+
+        .container button:hover {
+            background-color: rgba(0, 0, 0, 0.43);
+            cursor: pointer;
+        }
+
+        .container input::placeholder {
+            color: #4682b4;
+        }
+
+
+
+        /* the header section end from here  */
+
+        /* the main section starts from here  */
+
+        /* the her0-section starts */
+
+        .hero-section {
+            width: 1270px;
+            margin: auto;
+            padding: 20px;
+            background-color: #2e2e2e02;
+            box-shadow: 0px 0px 48px 1px black;
+            margin-top: 70px;
+            border-radius: 20px;
+
+        }
+
+        .hero-section h1 {
+            font-family: "Roboto", sans-serif;
+            color: rgba(255, 0, 0, 0.488);
+            text-align: center;
+            text-transform: capitalize;
+            font-size: 26px;
+            padding: 17px;
+        }
+
+        .hero-section h3 {
+            font-family: "Roboto", sans-serif;
+            color: rgba(255, 0, 0, 0.488);
+            text-align: center;
+            text-transform: capitalize;
+            font-size: 16px;
+            padding: 17px;
+        }
+
+        .hero-section p {
+            font-family: "Open Sans", serif;
+            border: none;
+            width: 600px;
+            text-align: center;
+            margin: auto;
+            font-size: 20px;
+            line-height: 40px;
+        }
+
+        .shop {
+            color: #FFFFFF;
+            background-color: #FFA500;
+            font-size: 16px;
+            font-family: "Nunito", sans-serif;
+            margin-left: 36rem;
+            align-items: center;
+            padding: 6px;
+            transition: 400ms;
+            margin-right: 20px;
+            margin-top: 10px;
+            border-radius: 10px;
+            border: none;
+        }
+
+        .shop:hover {
+            background-color: transparent;
+            cursor: pointer;
+            color: #FFA500;
+        }
+
+        /* the hero-section ends  */
+
+        /* the categories-section started from here  */
+
+        .categories-section,
+        .testimonial-section {
+            width: 1270px;
+            margin: auto;
+            margin-top: 80px;
+            padding: 20px;
+            padding-top: 20px;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid black;
+            border-top: 1px solid black;
+        }
+
+        .categories-section h1 {
+            text-align: center;
+            color: hsl(0, 100%, 30%);
+            font-family: "Open Sans", serif;
+            padding-bottom: 10px;
+            animation: typing 1s steps(24)  alternate;
+            white-space: nowrap;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        @keyframes typing{
+            from{
+                width: 0px;
+            }
+            to{
+                width: 35%;
+            }
+        }
+
+        .categories-section p {
+            color: hsl(0, 100%, 30%);
+            text-align: center;
+            font-family: "open sans", serif;
+            font-size: 20px;
+        }
+
+        .categories {
+            display: flex;
+            width: 1000px;
+            margin: 5px auto;
+            flex-wrap: wrap;
+
+        }
+
+        .Automotive,
+        .electrical,
+        .mechanical {
+            border: none;
+            width: 300px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 12px 3px black;
+        }
+
+        .Automotive img,
+        .electrical img,
+        .mechanical img {
+            width: 299px;
+            border-radius: 10px;
+
+        }
+
+        .Automotive span,
+        .electrical span,
+        .mechanical span {
+            color: red;
+            font-size: 14px;
+            font-family: "open sans", serif;
+
+        }
+
+        .Automotive p,
+        .electrical p,
+        .mechanical p {
+            color: black;
+            font-size: 14px;
+            text-align: justify;
+            padding: 10px;
+        }
+
+        .electrical img {
+            height: 166px;
+        }
+
+        .mechanical img {
+            height: 166px;
+        }
+
+        /* the categories-section ends from here  */
+
+        /* the testimonial section start from here  */
+        .testimonial-section {
+            font-family: "Open sans", serif;
+            border-top: none;
+
+        }
+
+        .testimonial-section h1 {
+            text-align: center;
+            color: hsla(0, 100%, 50%, 0.566);
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .testimonial-section P {
+            text-align: center;
+            color: hsla(26, 100%, 50%, 0.566);
+            font-size: 19px;
+        }
+
+        .test {
+            display: flex;
+            text-align: center;
+            width: 700px;
+            margin: auto;
+            margin-top: 30px;
+        }
+
+        .aadith {
+            text-align: justify;
+            margin: 20px;
+            box-shadow: 0px 0px 32px 5px black;
+            padding-bottom: 70px;
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        .aadith h1,
+        .yash h1 {
+            text-align: center;
+            padding-top: 10px;
+            font-size: 20px;
+            color: black;
+
+        }
+
+        i {
+            width: 100%;
+            display: inline-block;
+            text-align: center;
+            margin-top: -100px;
+        }
+
+        .aadith p,
+        .yash p {
+            color: hsla(0, 0%, 100%, 0.39);
+        }
+
+        .yash {
+            text-align: justify;
+            margin: 20px;
+            box-shadow: 0px 0px 32px 5px black;
+            padding-bottom: 70px;
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        /* the testimonial section end from here  */
+
+        /* the footer section starts from here  */
+
+        .footer-section {
+            padding: 20px;
+            display: flex;
+            text-align: center;
+            width: 800px;
+            margin: auto;
+            margin-top: 30px;
+            text-align: center;
+            align-items: center;
+            margin-bottom: 30px;
+            justify-content: center;
+        }
+
+
+        .footer-section p {
+            font-family: "Raleway", sans-serif;
+            font-size: 25px;
+            list-style: none;
+            margin-right: 9px;
+        }
+
+        .socialmedia {
+            position: absolute;
+            top: 114.29rem;
+            left: 39rem;
+        }
+
+        .facebook {
+            padding-left: 20px;
+        }
+
+
+        /* the main section starts from here  */
+    </style>
+    <!-- Ending of the internal css  -->
+</head>
+
+<body>
+    <!-- header section starts from here -->
+    <header>
+        <div class="container">
+            <nav>
+                <h1>hair spare parts</h1>
+                <ul>
+                    <li>home </li>
+                    <li>Services </li>
+                    <li>about us </li>
+                    <li>product </li>
+                    <li>contact us</li>
+                </ul>
+                <form>
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- header section ends from here  -->
+
+    <!-- main section starts from here  -->
+
+    <main>
+
+
+        <!-- hero-section starts from here  -->
+        <div class="hero-section">
+            <h1>your trusted partner for quality spare parts</h1>
+            <h3>"Discover a wide range of genuine and affordable spare parts for all your needs."</h3>
+            <p> "Whether you're repairing a vehicle, maintaining industrial equipment, or upgrading home appliances,
+                we've got you covered. Our extensive inventory features only the highest quality parts from trusted
+                manufacturers. With our user-friendly website and dedicated customer support, finding the perfect spare
+                part has never been easier."</p>
+            <button class="shop">shop now</button>
+        </div>
+        <!-- hero-section ended from here  -->
+
+
+
+        <!-- categories-section starts from here  -->
+
+        <div class="categories-section">
+            <h1>"Explore Our Categories"</h1>
+            <p> "Find exactly what you're looking for, from automotive to industrial spare parts."</p>
+            <div class="categories">
+                <div class="Automotive">
+                    <img src="/assests/Automotive images/auto main 1.jpg" alt="">
+                    <p><span>Automotive Parts:</span> Discover a wide range of car, truck, and bike components,
+                        including engine
+                        parts, brake systems, and suspension kits. Perfect for both professional mechanics and DIY
+                        enthusiasts.</p>
+                </div>
+                <div class="electrical">
+                    <img src="/assests/Electrical img/electrical spare parts.jpg" alt="">
+                    <p><span>Electrical components:</span> Browse our collection of cables, connectors, switches, and
+                        circuit boards designed to keep your systems running smoothly.</p>
+                </div>
+
+                <div class="mechanical">
+                    <img src="/assests/Mechanical img/mechanical parts.jpg" alt="">
+                    <p><span>Mechanical components:</span> High-quality components for industrial machinery, including
+                        belts, gears, and bearings. Built to meet the demands of heavy-duty operations.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- the categories-section ends from here  -->
+
+        <!-- the testimonial section starts from here  -->
+
+        <div class="testimonial-section">
+            <h1>"What Our Customers Say"</h1>
+            <p> "Our customers are at the heart of everything we do. Here’s what they have to say about their experience
+                with us. From timely deliveries to exceptional product quality, we take pride in making our customers
+                happy."</p>
+            <div class="test">
+                <div class="aadith">
+                    <h1>Aadith Gokul Ram</h1>
+                    <i>⭐️⭐️⭐️⭐️⭐️ </i>
+                    <p>"The website is so easy to use, and their customer support team helped me find the right part for
+                        my
+                        industrial machine. Excellent service!", Factory Manager.</p>
+                </div>
+                <div class="yash">
+                    <h1>Yashwanth kumar</h1>
+                    <i>⭐️⭐️⭐️⭐️⭐️ </i>
+                    <p>"I saved so much time and effort by ordering replacement parts for my washing machine here. They
+                        fit
+                        perfectly and work like a charm.".</p>
+                </div>
+            </div>
+        </div>
+        <!-- the testimonial section ends from here  -->
+    </main>
+    <!-- main section ended from here  -->
+    <!-- the footer section start from here  -->
+    <footer>
+        <div class="footer-section">
+            <p>home |</p>
+            <p>contact |</p>
+            <p>services</p>
+
+            <div class="socialmedia">
+                <img src="/assests/icons/icons8-facebook-24.png" alt="" class="facebook">
+                <img src="/assests/icons/icons8-twitter-24.png" alt="" class="facebook">
+                <img src="/assests/icons/icons8-instagram-24.png" alt="" class="facebook">
+                <img src="/assests/icons/icons8-youtube-24.png" alt="" class="facebook">
+                <img src="/assests/icons/icons8-linkedin-24.png" alt="" class="facebook">
+            </div>
+        </div>
+        </div>
+    </footer>
+</body>
+
+</html>
